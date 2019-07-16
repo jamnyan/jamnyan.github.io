@@ -8,9 +8,18 @@
 </head>
 <body>
 	<div class="search-box">
-		<input class="search-txt" type="text" name="" placeholder="Type to search">
-		<a class="search-btn" href="#"/>
+		<input class="search-txt" type="text" name="" placeholder="Type to search" id="inputtext">
+		<a class="search-btn" href="#" id="ok"/>
 		<i class="fas fa-search"></i>
+		<script type="text/javascript">
+			window.onload = function(){
+				let ipt = document.querySelector('#inputtext');
+				let ok = document.querySelector('#ok');
+				ok.onclick = function(){
+					ok.href ="https://www.baidu.com/s?ie=UTF-8&wd="+ipt.value;
+				}
+			}
+		</script>
 	</div>
 </body>
 </html>
