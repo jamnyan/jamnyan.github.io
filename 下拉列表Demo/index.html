@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>下拉列表Demo</title>
+	<!-- 样式路径 -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- 图标地址 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<!-- <link rel="stylesheet" href="http://www.fontawesome.com.cn/faicons/"> -->
+	<!-- jquery地址 -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="middle-list">
+		<div class="sm-container">
+			<i class="show-btn fab fa-edge"> 搜索引擎</i>
+			<div class="sm-menu">
+				<a href="#"><i class="fas fa-paw"> 百度</i></a>
+				<a href="#"><i class="fab fa-google"> 谷歌</i></a>
+				<a href="#"><i class="fab fa-stripe-s"> 搜狗</i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+				<a href="#"><i class="fab fa-whatsapp"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(".show-btn").click(function(){
+			$(".sm-menu").fadeToggle("fast");
+		});
+	</script>
+</body>
+</html>
