@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>动态搜索框</title>
+	<!-- 图标 -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1601022_a5f1yh10jpq.css">
+	<!-- 每日一句 -->
+	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+	<!-- 样式表 -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- <div class="headcenter-box">
+		<img src="">
+		<span id="head-text">
+			搜索栏
+		</span>
+	</div> -->
+	<div class="search-box">
+		<input class="search-txt" type="text" name="" placeholder="Type to search" id="inputtext" onkeydown="enterHandler()" >
+		<a class="search-btn" href="#" id="ok"/>
+		<i class="fas fa-search"></i>
+	</div>
+	<div id="jinrishici">
+		<div class="meiriyiju">
+			<span id="jinrishici-sentence">正在加载每日一句....</span><span>-by 每日一句</span>
+		</div>
+	</div>
+	<div class="footurl">
+		<ul>
+			<li>
+				<a  class="left_a" href="#"></a>
+			</li>
+			<li>
+				<a href="https://www.bilibili.com"><i class="iconfont iconbilibili" id="bilibili"></i></a>
+			</li>
+			<li>
+				<a href="javascript:show()"><i class="fab fa-weixin"></i></a>
+			</li>
+			<li>
+				<a href="https://weibo.com"><i class="fab fa-weibo"></i></a>
+			</li>
+			<li>
+				<a href="http://github.com"><i class="fab fa-github"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+			</li>
+			<li>
+				<a class="right_a" href="#"></a>
+			</li>
+		</ul>
+	</div>
+	<!-- 弹窗 -->
+	<div id="showbox">
+	<div><img id="weixincode" src="img/code.jpg"></div>
+	<a id="offshowbox" href="javascript:hide()"><i class="iconfont iconguanbi"></i></a>
+	</div>
+	<div id="hidebox"></div>
+</body>
+<script type="text/javascript">
+	window.onload = function(){
+		let ipt = document.querySelector('#inputtext');
+		let ok = document.querySelector('#ok');
+		ok.onclick = function(){
+			ok.href ="https://www.baidu.com/s?ie=UTF-8&wd="+ipt.value;
+		}
+	}
+	//敲击键盘上的Enter进入网页
+	function enterHandler(){
+   		var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+        if (keyCode == 13){
+            // 填写你的Enter响应操作!可以填写一个alert("") 来测试下!
+            // alert("123")
+            let ok = document.querySelector('#ok');
+			ok.click();
+		} 
+    }
+</script>
+<!-- 弹窗 -->
+<script type="text/javascript">
+		function show(){
+			var login = document.getElementById('showbox');
+			var over = document.getElementById('hidebox');
+			login.style.display = "block";
+			over.style.display = "block";
+		}
+		function hide(){
+			var login = document.getElementById('showbox');
+			var over = document.getElementById('hidebox');
+			login.style.display = "none";
+			over.style.display = "none";
+		}
+	</script>
+</html>
