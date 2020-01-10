@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>手机端测试</title>
+	<style type="text/css">
+		body{
+			background: url(img/8.jpg) no-repeat;
+			background-position:60% 10%;
+			height: 100vh;
+		}
+		h1{
+  			display: flex;
+  			align-items: center;
+			justify-content: center;
+			height: 50vh;
+			position: absolute; 
+			width: 100%; 
+			color: red;
+		}
+	</style>
+	<!-- 判断设备 -->
+	<script src="https://cdn.bootcss.com/device.js/0.2.7/device.js"></script>
+	<script>
+		if (device.desktop()) {
+			window.location ="index.html"
+			console.log("PC端")
+		}
+	</script>
+
+</head>
+<body>
+	<h1>目前暂不支持移动端，<br>
+		请前往PC端访问</h1>
+</body>
+</html>

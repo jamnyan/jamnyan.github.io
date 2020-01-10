@@ -13,6 +13,14 @@
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 	<!-- 样式表 -->
 	<link rel="stylesheet" href="style.css">
+	<!-- 判断设备 -->
+	<script src="https://cdn.bootcss.com/device.js/0.2.7/device.js"></script>
+	<script>
+		if (device.mobile()) {
+			window.location ="mobile.html"
+			console.log("移动端")
+		}
+	</script>
 </head>
 <body>
 	<!-- <div class="headcenter-box">
