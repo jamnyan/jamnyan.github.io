@@ -108,9 +108,11 @@ body{
 	position: absolute;
 	top: 88%;
 	/*left: 26%;*/
-	width: 40%;
-	padding:0 26.5%;
+	/*width: 40%;
+	padding:0 33%;*/
 	/*background: white; */
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 .footurl > p{
 	font-size: 25px;
