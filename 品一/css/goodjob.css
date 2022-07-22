@@ -1,0 +1,94 @@
+.list{
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    margin-bottom: 55px;
+    background: #f9f9f9;
+}
+.list a{
+    display: inline-block;
+    text-align: center;
+    margin: -2px;
+    width: 333px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+.list .change{
+    background: url(../img/tabbg.png);
+    width: 334px;
+    height: 42px;
+}
+.item{
+    color: #666666;
+    width: 720px;
+    height: 180px;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 25px ;
+}
+.item .text{
+    width: 410px;
+}
+.item h1{
+    font-size: 16px;
+}
+.item p{
+    margin: 15px 0;
+    line-height: 20px;
+}
+.text-end span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/eye.png) no-repeat center;
+    vertical-align: -5px;
+    margin-left: 10px   ;
+}
+.text-end div{
+    width: 50%;
+}
+.text-end .fr{
+    text-align: right;
+}
+.text-end a{
+    color: #666;
+}
+.page{
+    margin-bottom: 60px;
+}
+.page a{
+    display: inline-block;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.left{
+    background: #d8d8d8;
+    width: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+.right{
+    background: #d8d8d8;
+    width: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.numb{
+    background: #b50900;
+    width: 35px;
+}
+/* .fr{
+    width: 250px;
+    height: 95px;
+    border: 1px solid #ddd; 
+    padding: 25px;
+} */
+.aside{
+    border: 1px solid #ddd; 
+    padding: 20px;
+}

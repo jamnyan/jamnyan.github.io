@@ -1,0 +1,15 @@
+
+.contact{
+    padding: 45px 15px 75px;
+    text-align: center;
+    line-height: 20px;
+    border-top: 1px solid #ddd;
+}
+.item{
+    width: 320px;
+}
+.map {
+    /* text-align: center ; */ 
+    height: 420px;
+    background: url(../img/map.png) no-repeat center center;
+}

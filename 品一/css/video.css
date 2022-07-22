@@ -1,0 +1,21 @@
+.title{
+    color: #d43b33;
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 33px;
+}
+video{
+    width: 627px;
+    height: 475px;
+    background: #000;
+}
+.video-box{
+    margin-bottom: 80px;
+}
+.video-box>div{
+    width: 244px;
+    height: 475px;
+    background: #000;
+    color: #fff;
+    margin-left: 1px;
+}

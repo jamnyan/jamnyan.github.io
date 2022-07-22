@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+/* 浮动|清除浮动 */
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 版心 */
+.container{
+    width: 1000px;
+    margin: auto;
+}
+/* 导航 */
+header .nav-box{
+    background: #d43b33;
+}
+header .nav-box img{
+    padding: 0;
+    margin: 0;
+}
+header .nav{
+    padding-right: 45px;
+}
+header a{
+    text-align: center;
+    margin: auto;
+}
+#change{
+    background: url(../img/nav_bg.png) no-repeat bottom center;
+}
+header .nav span{
+    display: inline-block;
+    width: 90px;
+    height: 74px;
+    line-height: 74px;
+    /* height: 74px;
+    line-height: 75px; */
+    color: #fff;
+    font-size: 14px;
+}   
+/* 横幅 */
+.banner{
+    height: 279px;
+    background: url('../img/banner.png') no-repeat top center;
+}
+/* 尾部 */
+footer{
+    background: url(../img/footer_bg.png) center;
+    /* height: 316px; */
+    padding: 50px 0;
+    color: #fff; 
+    font-size: 12px;
+    line-height: 25px;
+}
+.foot-txt{
+    margin-left: 80px;
+}
+.foot-txt h1{
+    color: #fff;
+    font-size: 16px ;
+    margin-bottom: 15px;
+}
+.foot-txt span{
+    display: block;
+    color: #666;
+    margin: 50px 0;
+}
+/* 标题 */
+.text-head{
+    text-align: center;
+    font-size: 14px;
+    height: 150px;
+    padding: 50px 0;
+}
+.text-head span{
+    font-weight: bold;
+}

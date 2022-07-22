@@ -47,11 +47,11 @@ body{
 		background: #fff;
 	}
 	50%{
-transform: scaleY(1);
+		transform: scaleY(1);
 		background: #2ecc71;
 	}
 	100%{
-transform: scaleY(0.1);
+		transform: scaleY(0.1);
 		background: transparent;
 	}
 }
