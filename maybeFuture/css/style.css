@@ -5,30 +5,36 @@
 html,
 body {
     background-color: #FEDCC8;
+    margin: 0;
 }
 
-.parallax {
+.parallax,.out-box {
     perspective: 100px;
     height: 100vh;
-    /* width: 3000px; */
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: absolute;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+    width: 100%;
+    position: relative;
     top: 0;
     left: 50%;
     right: 0;
     bottom: 0;
-    margin-left: -1500px;
+    transform: translate(-50%, 0);
 }
 
 /* 隐藏滚动条，但仍然可以滚动 */
-.parallax {
+.parallax,.out-box{
     overflow: auto;
+    overflow-x: hidden;
     scrollbar-width: none;
     /* Firefox */
 }
 
 .parallax::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+.out-box::-webkit-scrollbar {
     display: none;
     /* Chrome, Safari, Opera */
 }
@@ -39,23 +45,30 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-
+    width: 100vw;
 }
 
 img {
     display: block;
     position: absolute;
     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    user-select: none;
+    /* 禁止图片拖拽 */
+    -webkit-user-drag: none;
 }
 .parallax__cover {
     background: #2D112B;
-    display: block;
-    position: absolute;
-    width: 3000px;
-    top: 99%;
+    /* display: block; */
+    position: relative;
+    width: 100%;
+    /* top: 99.5%; */
+    top:0;
     left: 0;
+    /* transform: translate(0,-50%); */
     right: 0;
-    height: 2000px;
+    min-height: 100vh;
     color: #fff;
     padding-top: 1%;
 }

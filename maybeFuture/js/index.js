@@ -1,4 +1,4 @@
-const parallax = document.querySelector('.parallax')
+const parallax = document.querySelector('.out-box')
 const parallaxLayer = document.querySelectorAll('.parallax__layer')
 const showBox = document.querySelector('.parallax__cover')
 
@@ -6,11 +6,11 @@ const showBox = document.querySelector('.parallax__cover')
 parallax.addEventListener('scroll', function() {
     const scrollTop = parallax.scrollY || parallax.scrollTop;
     parallaxLayer.forEach(function(layer,index) {
-        console.log('layer', layer, index);
-        const speed = (index-8) / 15
+        // console.log('layer', layer, index);
+        const speed = (index-6) / 15
         layer.style.transform = `translateY(${-(scrollTop * speed)}px)`
         if(index == 6){
-            showBox.style.transform = `translateY(${-(scrollTop * speed)}px)`
+            // showBox.style.transform = `translateY(${-(scrollTop * speed)}px)`
         }
     })
 })
