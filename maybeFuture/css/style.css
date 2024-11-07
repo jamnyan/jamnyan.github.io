@@ -11,8 +11,8 @@ body {
 .parallax,.out-box {
     perspective: 100px;
     height: 100vh;
-    /* overflow-x: hidden;
-    overflow-y: auto; */
+    overflow-x: hidden;
+    overflow-y: hidden;
     width: 100%;
     position: relative;
     top: 0;
@@ -23,7 +23,7 @@ body {
 }
 
 /* 隐藏滚动条，但仍然可以滚动 */
-.parallax,.out-box{
+.out-box{
     overflow: auto;
     overflow-x: hidden;
     scrollbar-width: none;
