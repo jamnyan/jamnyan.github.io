@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
 * {
     box-sizing: border-box;
 }
@@ -8,7 +10,8 @@ body {
     margin: 0;
 }
 
-.parallax,.out-box {
+.parallax,
+.out-box {
     perspective: 100px;
     height: 100vh;
     overflow-x: hidden;
@@ -23,7 +26,7 @@ body {
 }
 
 /* 隐藏滚动条，但仍然可以滚动 */
-.out-box{
+.out-box {
     overflow: auto;
     overflow-x: hidden;
     scrollbar-width: none;
@@ -34,6 +37,7 @@ body {
     display: none;
     /* Chrome, Safari, Opera */
 }
+
 .out-box::-webkit-scrollbar {
     display: none;
     /* Chrome, Safari, Opera */
@@ -58,17 +62,35 @@ img {
     /* 禁止图片拖拽 */
     -webkit-user-drag: none;
 }
+
 .parallax__cover {
     background: #2D112B;
     /* display: block; */
     position: relative;
     width: 100%;
     /* top: 99.5%; */
-    top:0;
+    top: 0;
     left: 0;
     /* transform: translate(0,-50%); */
     right: 0;
     min-height: 100vh;
     color: #fff;
     padding-top: 1%;
+}
+
+.parallax__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: pink; */
+    /* height: 5px; */
+    width: 100%;
+}
+
+.time {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 1%;
+    font-size: 60px;
+    color: #fff;
 }
